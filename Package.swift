@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Whisper",
+    name: "WhisperKit",
     platforms: [
         .iOS("16.4"),
         .macOS("13.3"),
@@ -11,14 +11,11 @@ let package = Package(
         .visionOS("1.0"),
     ],
     products: [
-        .library(
-            name: "Whisper",
-            targets: ["Whisper"]
-        ),
+        .library(name: "WhisperKit", targets: ["WhisperKit"])
     ],
     targets: [
         .target(
-            name: "Whisper",
+            name: "WhisperKit",
             dependencies: ["WhisperFramework"]
         ),
         .binaryTarget(
